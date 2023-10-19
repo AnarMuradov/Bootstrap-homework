@@ -1,0 +1,257 @@
+body{
+    font-family: "Nunito Sans", Arial, sans-serif
+}
+
+.head{
+    width: 100%;
+    height: 170px;    
+}
+.container{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.name{
+    cursor: pointer;
+}
+.hicon{
+
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8db1ab;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.hinfo{
+    color: #8db1ab;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbar{
+    width: 100%;
+    height: 72px;
+
+}
+.navcontainer{  
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+}
+.navcontainer a{
+    color: black;
+}
+.menu{
+    display: none;
+}
+@media only screen and (max-width: 991px){
+    .navbar{
+        display: none;
+    }
+    .menu{
+     display: inline-flex;
+     width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    padding: 0px 120px;
+    align-items: center;
+   
+    }
+}
+
+hr{
+border: 1px solid gainsboro;
+  
+}
+.fotosect{
+    width: 100%;
+    min-height: 1000px;
+   
+    
+}
+.fotocont{
+    max-width: 100%;
+    min-height: 700px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center ;
+   padding: 45px 0px;
+    gap: 30px;
+}
+.sbox1{
+    width: 300px;
+    min-height: 220px;
+    position: relative;
+    background-size: cover;
+
+}
+.sbox1 img{
+    width: 300px;
+    max-width: 100%;
+    min-height: 220px;
+    position: absolute;
+    transition: 200ms    ;
+}
+
+@media only screen and (max-width: 1300px){
+    .sbox1 img{
+        max-width: 90%;
+    }
+    .imgovr1{
+        max-width: 90%;
+    }
+    .fotocont{
+        grid-template-columns:auto auto auto;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .sbox1 img{
+        max-width: 80%;
+    }
+    .imgovr1{
+        max-width: 80%;
+    }
+    .fotocont{
+        grid-template-columns:auto auto;
+    }
+}
+@media only screen and (max-width: 750px){
+    .sbox1 img{
+        max-width: 70%;
+    }
+    .imgovr1{
+        max-width: 70%;
+    }
+    .fotocont{
+        grid-template-columns:auto auto;
+    }
+}
+@media only screen and (max-width: 650px){
+    .sbox1 img{
+        max-width: 100%;
+    }
+    .imgovr1{
+        max-width: 100%;
+    }
+    .fotocont{
+        grid-template-columns: auto;
+    }
+}
+.imgovr1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: black;
+    
+  
+  }
+  .fa-magnifying-glass {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: #8db1ab;
+    padding: 15px 15px;
+    opacity: 1;
+    border-radius: 50%;
+    cursor: zoom-in;
+    
+    
+  }
+  .sbox1:hover .imgovr1 {
+    opacity: 0.8;
+  }
+
+.footer{
+    height: 560px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box1{
+    width: 475px;
+    height: 290px;
+    display: grid;
+}
+.box2{
+    width: 570px;
+    height: 290px;
+    display: grid;
+
+}
+.box1name a{
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    transition: 500ms;
+}
+.box1name a:hover{
+    color: #8db1ab;
+}
+
+.connect{
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+.ficon{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+
+}
+.brand{
+    width: 50px;
+    height: 50px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box2name a{
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+
+}
+.tags{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.tags a{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 500ms;
+}
+.tags a:hover{
+    color: #8db1ab;
+}
+@media only screen and (max-width: 426px){
+    .footer{
+flex-wrap: wrap;
+    }
+}
